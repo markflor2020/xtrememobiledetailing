@@ -1,0 +1,9 @@
+# Not part of the public site — exclude from what Cloudflare serves.
+.git/
+.wrangler/
+.claude/
+.gitignore
+.assetsignore
+wrangler.toml
+*.py
+*.md
