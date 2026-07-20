@@ -22,9 +22,9 @@ DOMAIN = "https://xtreme-mobiledetailing.com"   # no trailing slash
 
 BUSINESS = "Xtreme Mobile Detailing"
 PHONE = "+1-402-301-3243"
-OG_IMAGE = f"{DOMAIN}/assets/img/IMG_2666.jpeg"
+OG_IMAGE = f"{DOMAIN}/assets/img/IMG_2473.jpeg"
 INSTAGRAM = "https://www.instagram.com/xtreme_mobiledetail/"
-FACEBOOK = "https://www.facebook.com/437891520308105"
+FACEBOOK = "https://www.facebook.com/Xtm402/"
 
 REVIEWS = [
     ("Billy Johnson", "I am very impressed with their work. My RS is the cleanest it's probably ever been. Their prices are very affordable and the level of detail they put into the work shows. I would recommend Xtreme Mobile Detailing to anyone."),

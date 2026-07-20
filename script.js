@@ -6,6 +6,39 @@
   var yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+  /* ---- hero slideshow ---- */
+  var heroSlideshow = document.getElementById("heroSlideshow");
+  if (heroSlideshow) {
+    var slides = heroSlideshow.querySelectorAll(".hero__slide");
+    var dots = heroSlideshow.querySelectorAll(".hero__dot");
+    var current = 0;
+    var timer = null;
+
+    var goTo = function (index) {
+      slides[current].classList.remove("is-active");
+      dots[current].classList.remove("is-active");
+      current = index;
+      slides[current].classList.add("is-active");
+      dots[current].classList.add("is-active");
+    };
+
+    var next = function () { goTo((current + 1) % slides.length); };
+
+    var start = function () {
+      if (slides.length < 2) return;
+      timer = setInterval(next, 5000);
+    };
+    var stop = function () { clearInterval(timer); };
+
+    dots.forEach(function (dot, i) {
+      dot.addEventListener("click", function () { goTo(i); stop(); start(); });
+    });
+    heroSlideshow.addEventListener("mouseenter", stop);
+    heroSlideshow.addEventListener("mouseleave", start);
+
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) start();
+  }
+
   /* ---- Google Analytics ---- */
   // Create a GA4 property at analytics.google.com, then paste its Measurement
   // ID (looks like "G-XXXXXXXXXX") below. Loads on every page once set — this
