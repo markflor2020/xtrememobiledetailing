@@ -111,7 +111,7 @@
   // submissions are emailed there). Paste it below to turn on email delivery.
   // Until then, the form falls back to opening a pre-filled text, so it
   // always works.
-  var WEB3FORMS_KEY = "";
+  var WEB3FORMS_KEY = "0a283fe6-5600-4ac3-948c-bd1aee573623";
   var XTREME_PHONE = "+14023013243";
 
   var form = document.getElementById("qform");
