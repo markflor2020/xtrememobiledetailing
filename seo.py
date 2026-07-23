@@ -17,7 +17,7 @@ import pathlib
 ROOT = pathlib.Path(__file__).parent
 
 # ── EDIT ME if the domain changes, then re-run this script ───────────────────
-DOMAIN = "https://xtreme-mobiledetailing.com"   # no trailing slash
+DOMAIN = "https://xtrememobiledetail.com"   # no trailing slash
 # ────────────────────────────────────────────────────────────────────────────
 
 BUSINESS = "Xtreme Mobile Detailing"
